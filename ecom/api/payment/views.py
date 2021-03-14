@@ -54,10 +54,10 @@ def process_payment(request, id, token):
             "submit_for_settlement": True
         }
     })
-
+    
     if result.is_success:
         return JsonResponse({
-            # NOTE: transaction spelling bug was fixed later
+            
             "success": result.is_success, 'transaction': {'id': result.transaction.id, 'amount': result.transaction.amount}})
     else:
         return JsonResponse({'error': True, 'sucess': False})

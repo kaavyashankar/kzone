@@ -14,16 +14,17 @@ export const processPayment = (userId, token, paymentInfo) => {
   const formData = new FormData();
 
   for (const name in paymentInfo) {
-    formData.append(name, paymentInfo[name]);
+    formData.append(name, paymentInfo[name])
   }
 
   return fetch(`${API}payment/process/${userId}/${token}/`, {
     method: "POST",
-    body: formData,
+    body: formData
   })
     .then((response) => {
       console.log("p-0", response);
       return response.json();
     });
-  //.catch((err) => console.log(err));
+    //.catch((err) => console.log(err));
 };
+

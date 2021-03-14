@@ -8,6 +8,7 @@ ReactDOM.render(<Routes />, document.getElementById("root"));
 
 
 
-
-
+//Service worker Registration
 serviceWorkerRegistration.register();
+
+

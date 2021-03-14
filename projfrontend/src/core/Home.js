@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 
 import { getProducts } from "./helper/coreapicalls";
@@ -24,16 +25,21 @@ export default function Home() {
 
   useEffect(() => {
     loadAllProducts();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  
   }, []);
 
   return (
-    <Base title="Home Page" description="Welcome to K zone">
-      <h1>Home component</h1>
+    
+    <Base title="Welcome to K zone" description="Treat yo' self" >
+      
+      
+      
+      <h1></h1>
+      
       <div className="row">
         {products.map((product, index) => {
           return (
-            <div key={index} className="col-4 mb-4">
+            <div key={index} className="col-3 mb-4">
               <Card product={product} />
             </div>
           );

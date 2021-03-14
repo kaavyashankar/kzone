@@ -17,6 +17,7 @@ const Signin = () => {
         didRedirect:false
 
     })
+    // eslint-disable-next-line no-unused-vars
     const {name, email, password, error, success,loading,didRedirect} = values;
 
 const handleChange = (name) => (event) => {
@@ -67,6 +68,7 @@ const handleChange = (name) => (event) => {
             )
         )
     }
+    // eslint-disable-next-line no-unused-vars
     const successMessage = () => {
         return(
             <div className="row">
@@ -85,6 +87,7 @@ const handleChange = (name) => (event) => {
         )
     }
 
+    // eslint-disable-next-line no-unused-vars
     const errorMessage = () => {
         return(
             <div className="row">

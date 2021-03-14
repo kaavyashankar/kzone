@@ -13,6 +13,8 @@ const currentTab = (history, path) => {
 
 const Menu = ({history, path}) => {
     return (
+      
+
         <div>
             <ul className="nav nav-labs bg-dark">
                 <li className = "nav-item">
@@ -21,7 +23,14 @@ const Menu = ({history, path}) => {
                     to = "/"
                 >
                     Home</Link>
+                    
                 </li>
+
+                
+            
+            
+
+            
                 
 
 
@@ -65,6 +74,18 @@ const Menu = ({history, path}) => {
 
                     </Fragment>
                 )}
+
+                <li className = "search-container">
+
+                
+
+                <form id="search-form">
+                    <label for="site-search">What are you looking for???</label>
+                    <input type="search " id="search-field" class="search-field"  /><button id="search-button" class="search-button">Search</button>
+                </form>
+                </li>
+
+                
                 {isAuthenticated() && (
                     <li className = "nav-item">
                     <span 

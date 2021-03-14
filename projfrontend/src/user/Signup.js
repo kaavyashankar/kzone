@@ -13,13 +13,11 @@ const Signup = () =>{
         error:"",
         success:false,
     });
-
     const {name, email, password, error, success} = values;
 
     const handleChange = name => event => {
         setValues({...values, error: false, [name]: event.target.value});
     };
-
     const onSubmit = (event) => {
         event.preventDefault();
         setValues({...values, error: false});

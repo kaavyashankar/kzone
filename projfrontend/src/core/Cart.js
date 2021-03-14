@@ -32,6 +32,7 @@ const Cart= () => {
         )
     }
 
+    
     const loadCheckout = () => {
         return(
             <div>
